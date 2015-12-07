@@ -24,8 +24,6 @@ string findPalindrome(string s, int left, int right) {
 }
 
 // This is the common solution.
-// Actuatlly it's faster than DP solution under Leetcode's test
-// the below optimized DP solution need 700ms+, this needs around 250ms.
 string longestPalindrome(string s) {
     int n = s.size();
     if (n <= 1) {
