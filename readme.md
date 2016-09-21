@@ -16,4 +16,7 @@ learn from [coolshell.cn](http://coolshell.cn/articles/12052.html)
 |4|[Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)|[C++](./algorithms/cpp/medianOfTwoSortedArrays/medianOfTwoSortedArrays.cpp)|Hard|
 |5|[longest Palindromic Substring](https://oj.leetcode.com/problems/longest-palindromic-substring/)|[C++](./algorithms/cpp/longestPalindromicSubstring/longestPalindromicSubstring.cpp)|Medium|
 |6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)|[C++](./algorithms/cpp/zigZagConversion/zigZagConversion.cpp)|Easy|
-|6|[ZigZag Conversion](https://oj.leetcode.com/problems/zigzag-conversion/)|[C++](./algorithms/cpp/zigZagConversion/zigZagConversion.cpp)|Easy|
+|7|[Reverse
+integer](https://oj.leetcode.com/problems/reverse-integer)|[C++](./algorithms/cpp/reverseInteger/reverseInteger.cpp)|Easy|
+|8|[String to
+Integer(atoi)](https://oj.leetcode.com/problems/string-to-integer-atoi//)|[C++](./algorithms/cpp/stringToInteger/stringToInteger.cpp)|Easy|
