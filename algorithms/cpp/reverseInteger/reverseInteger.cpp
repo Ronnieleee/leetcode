@@ -20,13 +20,13 @@
  *
  *******************************************************************************/
 
-#include <limits>
+#include <climits>
 #include <cstdio>
 #include <cstdlib>
 using namespace std;
 
-int int_max = numeric_limits<int>::max();
-int int_min = numeric_limits<int>::min();
+//#define INT_MAX  numeric_limits<int>::max()
+//#define INT_MIN  numeric_limits<int>::min()
 
 class Solution {
 public:
@@ -37,7 +37,7 @@ public:
             n = order % 10;
             // over/underflow test
             // Actually, it should be reverse > (int_max-n)/10, but n/10 is 0
-            if (reverse > int_max/10 || reverse < int_min/10) {
+            if (reverse > INT_MAX/10 || reverse < INT_MIN/10) {
                 return 0;
             }
             reverse = reverse * 10 + n;
