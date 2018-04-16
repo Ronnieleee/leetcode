@@ -4,7 +4,7 @@ learn from [coolshell.cn](http://coolshell.cn/articles/12052.html)
 [LeetCode Online Judge](https://leetcode.com/)
 
 #### Algorithm problems can be found
-[here](https://leetcode.com/problemset/algorithms/)
+[Here](https://leetcode.com/problemset/algorithms/)
 
 (Notes: "&hearts;" means you need to buy a book from Leetcode)
 
