@@ -31,17 +31,13 @@ public:
         vector<int> result;
 
         for (int i = 0; i < numbers.size(); i++) {
-            // not found the second one
-            if (unorder_map.find(numbers[i]) == unorder_map.end()) {
-                // store the first one position into the second one's key
-                unorder_map[target - numbers[i]] = i;
+            int other = target - numbers[i];
+            if (unorder_map.count(other)) {
+                result.push_back(unorder_map[other]);
+                result.push_back(i);
+                return result;
             }
-            else {
-                // found the second one
-                result.push_back(unorder_map[numbers[i]] + 1);
-                result.push_back(i+1);
-                break;
-            }
+            unorder_map[numbers[i]] = i;
         }
         return result;
     }
