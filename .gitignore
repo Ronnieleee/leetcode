@@ -1,6 +1,4 @@
-./algorithms/python/0007reverseInteger/.DS_Store
 ./DS_Store
-./gitignore
 ./algorithms/.DS_Store
-./algorithms/cpp/.DS_Store
-./algorithms/python/.DS_Store
+./algorithms/*/.DS_Store
+./algorithms/*/*/.DS_Store
