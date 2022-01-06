@@ -1,6 +1,6 @@
 // Source : https://leetcode.com/problems/add-two-numbers/
-// Author : Ronnie
-// Date   : 2015-12-04
+// Author : Ronnieleee
+// Date   : 2021-01-06
 
 /*******************************************************************************
 *
@@ -25,40 +25,32 @@
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        int x = 0;
-        int y = 0;
-        int upper = 0;
-        int lower = 0;
-        ListNode *p = NULL;
-        ListNode **t = &p;
+        int sum = 0;
+        ListNode *l3 = NULL;
+        listNode **navigator = &l3;
 
-        while (l1 != NULL || l2 != NULL) {
-            x = getValueAndMoveNext(l1);
-            y = getValueAndMoveNext(l2);
-
-            lower = x + y + upper;
-
-            ListNode *node = new ListNode(lower%10);
-            *t = node;
-            t = (&node->next);
-
-            upper = lower/10;
+        while(l1 || l2 || sum > 0)
+        {
+            if(l1)
+            {
+                sum += l1->val;
+                l1 = l1->next;
+            }
+            if(l2)
+            {
+                sum += l2->val;
+                l2 = l2->next;
+            }
+            (*navigator) = new ListNode(sum%10);
+            sum /= 10;
+            navigator = &((*navigator)->next);
         }
-        if (upper > 0) {
-            ListNode *node = new ListNode(upper%10);
-            *t = node;
-        }
-
-        return p;
-    }
-
-private:
-    int getValueAndMoveNext(ListNode* &list){
-        int x = 0;
-        if (list != NULL){
-            x = list->val;
-            list = list->next;
-        }
-        return x;
+        return l3;
     }
 };
+
+/*
+cpp new keyword
+Complex *pc = new Complex(1, 2);
+return a point.
+*/

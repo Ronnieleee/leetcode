@@ -1,6 +1,6 @@
 // Source : https://oj.leetcode.com/problems/two-sum/
-// Author : Ronnie
-// Date   : 2015-12-04
+// Author : Ronnieleee
+// Date   : 2021-01-06
 
 /*******************************************************************************
 *
@@ -22,9 +22,10 @@ class Solution {
 public:
     //
     // 1) Traverse the vector one by one
-    // 2) just put the 'target - numbers[i]' into the map.
-    // 3) Checking the next numbers[i], if we found it is
-    //    already in the map, which means we found the second one
+    // 2) just search the 'target - numbers[i]' in the map.
+    // 3) if yes return i unorder_map[other]
+    //    if not add map[number[i]] = i to the map
+    //    until you search the right i and the unorder_map[other]
     //
     vector<int> twoSum(vector<int> &numbers, int target) {
         unordered_map<int, int> unorder_map;
@@ -42,3 +43,8 @@ public:
         return result;
     }
 };
+
+/*
+by using cpp unordered_map container and its member function count.
+we often call it hashmap in datastruct course.
+*/
